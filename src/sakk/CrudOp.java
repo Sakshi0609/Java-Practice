@@ -31,10 +31,10 @@ public class CrudOp {
 		
 		int status = stmt.executeUpdate("Insert into studr values(4,'Adii','Nashik')");
 		if(status==1) {
-			System.out.println("data saved");
+			System.out.println("data saved in database successfully");
 		}
 		else {
-			System.out.println("Data not saved");
+			System.out.println("Data Not saved");
 		}
 		
 		
@@ -63,10 +63,7 @@ public class CrudOp {
 		
 	}
 	
-	// Gettalldata from table
-	public static void getAlldata() {
-		
-	}
+	
 	
 	
 	// Update data 
@@ -77,10 +74,10 @@ public class CrudOp {
 		
 		int status = stmt.executeUpdate("update studr set name = 'sakk' where id=1");
 		if(status==1) {
-			System.out.println("Data update");
+			System.out.println("Data update successfully");
 		}
 		else {
-			System.out.println("Data not updated");
+			System.out.println("No update");
 		}
 				
 	}
